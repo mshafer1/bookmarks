@@ -1,3 +1,6 @@
 <table>
-<app-row *ngFor="let element of data" [name]="element.name" [link]="element.link" [description]="element.description"></app-row>
+<tr *ngFor="let element of data">
+    <th><a href="{{ element.link }}">{{ element.name }} 🔗</a></th>
+    <td>{{ element.description }}</td>
+</tr>
 </table>
