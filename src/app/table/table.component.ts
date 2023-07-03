@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import * as rawData from '../../assets/data.json';
-
-class Datum {
-  name!: string
-  link!: string
-  description!: string
-}
-
+import {Datum} from "../data"
 
 @Component({
   selector: 'app-table',
