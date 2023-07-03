@@ -7,9 +7,14 @@ import * as lodash from "lodash";
   styleUrls: ['./filter.component.less']
 })
 export class FilterComponent {
-  @Output() filterChange = new EventEmitter<string>();
+  @Output() filterChange = new EventEmitter<object>();
 
-  debounceSetFilter = lodash.debounce((value) => {this.filterChange.emit(value)}, 300);
+  debounceSetFilter = lodash.debounce((value) => {
+    let emitData = {
+      value: value,
+    }
+    this.filterChange.emit(emitData)
+  }, 300);
 
   setFilter(event: any) {
     this.debounceSetFilter(event.target.value)
