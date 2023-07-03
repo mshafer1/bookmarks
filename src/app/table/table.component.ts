@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 import * as rawData from '../../assets/data.json';
 import {Datum} from "../data"
+import { QueryList, ViewChildren } from '@angular/core';
+import {
+  SortableHeaderDirective,
+  SortEvent,
+  compare,
+} from '../sortable-header.directive'
 
 @Component({
   selector: 'app-table',
@@ -10,9 +16,35 @@ import {Datum} from "../data"
 export class TableComponent {
   data!: Array<Datum>;
   all_data!: Array<Datum>;
+  filtered_data!: Array<Datum>;
   url: string = '/assets/data.json';
+  
+  @ViewChildren(SortableHeaderDirective)
+  headers!: QueryList<SortableHeaderDirective>;
 
   constructor() {}
+
+  onSort({ column, direction }: SortEvent) {
+    // resetting other headers
+    this.headers.forEach((header) => {
+      if (header.sortable !== column) {
+        header.direction = '';
+      }
+    });
+  
+
+
+    console.log("Soring based on: ", column, direction)
+    // sorting countries
+    if (direction === '' || column === '') {
+      this.data = this.filtered_data;
+    } else {
+      this.data = [...this.filtered_data].sort((a, b) => {
+        const res = compare(a[column], b[column]);
+        return direction === 'asc' ? res : -res;
+      });
+    }
+  }
 
   checkItem(item: Datum, search: string, caseCheck: boolean) {
     if (!caseCheck) {
@@ -46,14 +78,15 @@ export class TableComponent {
         temp_list.push(element)
       }
     });
-    this.data = temp_list;
+    this.filtered_data = temp_list;
+    this.onSort({column: '', direction: ''});
   };
 
   ngOnInit() {
     console.log("Fetching");
     fetch(this.url).then(res => res.json())
     .then(json => {
-      this.all_data = this.data = json;
+      this.all_data = this.data = this.filtered_data = json;
       console.log('Data', this.data);
     });
   }

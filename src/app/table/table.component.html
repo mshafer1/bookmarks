@@ -3,8 +3,8 @@
     <app-filter (filterChange)="setFilter($event)"></app-filter>
     <table class="table table-striped table-bordered">
         <tr>
-            <th class="th-sm">Link</th>
-            <th class="text-left">Description</th>
+            <th class="th-sm" sortable="link" (sort)="onSort($event)">Link</th>
+            <th class="text-left" sortable="description" (sort)="onSort($event)">Description</th>
         </tr>
         <tr *ngFor="let element of data" class="p-1 pt-4 mt-1">
             <th class="th-sm"><p><a href="{{ element.link }}">{{ element.name }} 🔗</a></p></th>
