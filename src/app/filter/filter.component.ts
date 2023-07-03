@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import * as lodash from "lodash";
 
 @Component({
   selector: 'app-filter',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./filter.component.less']
 })
 export class FilterComponent {
+  @Output() filterChange = new EventEmitter<string>();
 
+  debounceSetFilter = lodash.debounce((value) => {this.filterChange.emit(value)}, 300);
+
+  setFilter(event: any) {
+    this.debounceSetFilter(event.target.value)
+  }
 }
