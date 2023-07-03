@@ -2,5 +2,6 @@
     <div class="input-group-prepend m-2">
         <label for="filter"><span class="material-symbols-outlined">filter_alt</span></label>
     </div>
-        <input type="text" id="filter" (input)="setFilter($event)" class="border-0 form-control"/>
+    <input type="text" id="filter" (input)="setFilter($event)" [(ngModel)]="filterValue" class="border-0 form-control"/>
+    <button class="btn" (click)="clearFilter()" *ngIf="filterValue" style="float: right; margin-right:10px!important;"><i class="material-symbols-outlined">close</i></button>
 </div>

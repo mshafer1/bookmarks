@@ -8,6 +8,7 @@ import * as lodash from "lodash";
 })
 export class FilterComponent {
   @Output() filterChange = new EventEmitter<object>();
+  filterValue!: string
 
   debounceSetFilter = lodash.debounce((value) => {
     let emitData = {
@@ -18,5 +19,11 @@ export class FilterComponent {
 
   setFilter(event: any) {
     this.debounceSetFilter(event.target.value)
+  }
+
+  clearFilter() {
+    console.log("Clearing filter");
+    this.filterValue = "";
+    this.debounceSetFilter(this.filterValue);
   }
 }
