@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as rawData from '../../assets/data.json';
+import {APP_BASE_HREF} from '@angular/common';
 import {Datum} from "../data"
 import { QueryList, ViewChildren } from '@angular/core';
 import {
@@ -17,7 +17,7 @@ export class TableComponent {
   data!: Array<Datum>;
   all_data!: Array<Datum>;
   filtered_data!: Array<Datum>;
-  url: string = '/assets/data.json';
+  url: string = `${APP_BASE_HREF}/assets/data.json`;
   
   @ViewChildren(SortableHeaderDirective)
   headers!: QueryList<SortableHeaderDirective>;
