@@ -19,7 +19,7 @@ export class TableComponent {
   filtered_data!: Array<Datum>;
   href!: string
   url: string = `assets/data.json`;
-  last_sort!: SortEvent;
+  last_sort: SortEvent =  {column:'', direction:''};
   
   @ViewChildren(SortableHeaderDirective)
   headers!: QueryList<SortableHeaderDirective>;
