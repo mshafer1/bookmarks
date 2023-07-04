@@ -10,9 +10,19 @@
         "description": "lorem ipsum"
     },
     {
-        "name": "Test 2",
-        "link": "#2",
-        "description": "Dolor Sit Amet"
+        "name": "strftime.org",
+        "link": "https://strftime.org/",
+        "description": "Python datetime string formattting cheatsheet"
+    },
+    {
+        "name": "crontab.guru",
+        "link": "https://crontab.guru/",
+        "description": "Crontab calculator/checker"
+    },
+    {
+        "name": "NW Church of Christ",
+        "link": "https://nwchurchofchrist.org/",
+        "description": "Northwest Church of Christ website"
     }
     
 ]
