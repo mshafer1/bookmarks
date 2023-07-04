@@ -15,6 +15,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          ref: 'release'
+      
+      - name: merge latest main
+        run: |
+          git merge origin/main -X theirs
 
       - name: setup node
         uses: actions/setup-node@master
