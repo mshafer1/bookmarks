@@ -1,6 +1,6 @@
 <div class="border rounded input-group m-2 mb-4">
     <div class="input-group-prepend m-2">
-        <label for="filter"><span class="material-symbols-outlined">filter_alt</span></label>
+        <label for="filter" class="clickable"><span class="material-symbols-outlined">filter_alt</span></label>
     </div>
     <input type="text" id="filter" (input)="setFilter($event)" [(ngModel)]="filterValue" class="border-0 form-control"/>
     <button class="btn" (click)="clearFilter()" *ngIf="filterValue" style="float: right; margin-right:10px!important;"><i class="material-symbols-outlined">close</i></button>
