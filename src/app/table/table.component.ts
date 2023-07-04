@@ -19,6 +19,7 @@ export class TableComponent {
   filtered_data!: Array<Datum>;
   href!: string
   url: string = `assets/data.json`;
+  last_sort!: SortEvent;
   
   @ViewChildren(SortableHeaderDirective)
   headers!: QueryList<SortableHeaderDirective>;
@@ -28,6 +29,7 @@ export class TableComponent {
 
   onSort({ column, direction }: SortEvent) {
     // resetting other headers
+    this.last_sort = {column, direction}
     this.headers.forEach((header) => {
       if (header.sortable !== column) {
         header.direction = '';
@@ -81,7 +83,8 @@ export class TableComponent {
       }
     });
     this.filtered_data = temp_list;
-    this.onSort({column: '', direction: ''});
+    console.log('Updated data, now updating sort to', this.last_sort)
+    this.onSort(this.last_sort);
   };
 
   ngOnInit() {
