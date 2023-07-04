@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '!docs'
+
+jobs:
+  build_docs:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: setup node
+        uses: actions/setup-node@master
+        with:
+          node-version: 18.16.1
+
+      # install applicaion dependencies
+      - name: Install dependencies
+        run: |
+          npm install
+      # build
+      - name: build
+        run: |
+          npm run build
