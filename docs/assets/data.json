@@ -17,6 +17,6 @@
     {
         "name": "command-not-found.com",
         "link": "https://command-not-found.com",
-        "description": "Lookup tool to find what package you need to install to get a command that \"not found\". Includes many linux distros WSL's flavor of debian."
+        "description": "Lookup tool to find what package you need to install to get a command that is \"not found\". Includes many linux distros including WSL's flavor of debian."
     }    
 ]
