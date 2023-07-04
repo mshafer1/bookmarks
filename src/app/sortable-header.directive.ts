@@ -1,3 +1,4 @@
+// from https://github.com/inexuscore/ng-table-sort-and-filter/blob/6e23552281e8dfa8c1d9123575135ccc20ff85f6/src/app/sortable-header.directive.ts
 import { Directive, EventEmitter, Input, Output } from '@angular/core';
 import { Datum } from './data';
 
@@ -12,8 +13,19 @@ const rotate: { [key: string]: SortDirection } = {
 
 export const compare = (
   v1: string | number | boolean | Date,
-  v2: string | number | boolean | Date
-) => (v1 < v2 ? -1 : v1 > v2 ? 1 : 0);
+  v2: string | number | boolean | Date,
+  case_check: boolean = true
+) => {
+    if (!case_check) {
+        if(typeof(v1) == 'string') {
+            v1 = v1.toLocaleLowerCase()
+        }
+        if(typeof(v2) == 'string') {
+            v2 = v2.toLocaleLowerCase()
+        }
+    }
+    return (v1 < v2 ? -1 : v1 > v2 ? 1 : 0)
+};
 
 export interface SortEvent {
   column: SortColumn;

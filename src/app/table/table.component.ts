@@ -42,7 +42,7 @@ export class TableComponent {
       this.data = this.filtered_data;
     } else {
       this.data = [...this.filtered_data].sort((a, b) => {
-        const res = compare(a[column], b[column]);
+        const res = compare(a[column], b[column], false);
         return direction === 'asc' ? res : -res;
       });
     }
