@@ -21,7 +21,7 @@ jobs:
       - name: merge latest main
         run: |
           git fetch
-          git merge origin/main -X theirs
+          git checkout origin/main .
 
       - name: setup node
         uses: actions/setup-node@master

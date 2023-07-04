@@ -1,5 +1,15 @@
 [
     {
+        "name": "Test 1",
+        "link": "#1",
+        "description": "Lorem Ipsum"
+    },
+    {
+        "name": "test lower",
+        "link": "#1",
+        "description": "lorem ipsum"
+    },
+    {
         "name": "strftime.org",
         "link": "https://strftime.org/",
         "description": "Python datetime string formattting cheatsheet"
@@ -13,10 +23,6 @@
         "name": "NW Church of Christ",
         "link": "https://nwchurchofchrist.org/",
         "description": "Northwest Church of Christ website"
-    },
-    {
-        "name": "command-not-found.com",
-        "link": "https://command-not-found.com",
-        "description": "Lookup tool to find what package you need to install to get a command that \"not found\". Includes many linux distros WSL's flavor of debian."
-    }    
+    }
+    
 ]
