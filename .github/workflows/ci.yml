@@ -20,9 +20,8 @@ jobs:
       
       - name: merge latest main
         run: |
-          git checkout main
-          git checkout release
-          git merge main -X theirs
+          git fetch
+          git merge origin/main -X theirs
 
       - name: setup node
         uses: actions/setup-node@master
