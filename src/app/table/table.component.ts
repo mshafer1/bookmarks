@@ -1,5 +1,4 @@
 import { Component, Inject } from '@angular/core';
-import {APP_BASE_HREF} from '@angular/common';
 import {Datum} from "../data"
 import { QueryList, ViewChildren } from '@angular/core';
 import {
@@ -7,6 +6,7 @@ import {
   SortEvent,
   compare,
 } from '../sortable-header.directive'
+import { DOCUMENT, LocationStrategy, Location } from '@angular/common';
 
 @Component({
   selector: 'app-table',
@@ -23,9 +23,8 @@ export class TableComponent {
   @ViewChildren(SortableHeaderDirective)
   headers!: QueryList<SortableHeaderDirective>;
 
-  constructor(@Inject(APP_BASE_HREF) baseHref: string) {
-    this.href =  baseHref + this.href;
-  }
+  // Normally, you should not access PlatformLocation directly, it's just included here for completeness.
+  constructor(@Inject(DOCUMENT) private document: Document, private location: Location, private locationStrategy: LocationStrategy) { }
 
   onSort({ column, direction }: SortEvent) {
     // resetting other headers
@@ -87,7 +86,12 @@ export class TableComponent {
 
   ngOnInit() {
     console.log("Fetching");
-    fetch(this.url).then(res => res.json())
+
+    console.log("and", location.pathname)
+    console.log('location', this.location)
+    console.log('locationStrategy', this.locationStrategy)
+
+    fetch(location.pathname + this.url).then(res => res.json())
     .then(json => {
       this.all_data = this.data = this.filtered_data = json;
       console.log('Data', this.data);
