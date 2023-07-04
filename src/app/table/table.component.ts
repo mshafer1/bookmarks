@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import {APP_BASE_HREF} from '@angular/common';
 import {Datum} from "../data"
 import { QueryList, ViewChildren } from '@angular/core';
@@ -17,12 +17,15 @@ export class TableComponent {
   data!: Array<Datum>;
   all_data!: Array<Datum>;
   filtered_data!: Array<Datum>;
-  url: string = `${APP_BASE_HREF}/assets/data.json`;
+  href!: string
+  url: string = `assets/data.json`;
   
   @ViewChildren(SortableHeaderDirective)
   headers!: QueryList<SortableHeaderDirective>;
 
-  constructor() {}
+  constructor(@Inject(APP_BASE_HREF) baseHref: string) {
+    this.href =  baseHref + this.href;
+  }
 
   onSort({ column, direction }: SortEvent) {
     // resetting other headers
