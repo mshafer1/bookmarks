@@ -34,7 +34,7 @@ export class TableComponent {
   
 
 
-    console.log("Soring based on: ", column, direction)
+    console.log(`Sorting based on: '${column}', '${direction}'`)
     // sorting countries
     if (direction === '' || column === '') {
       this.data = this.filtered_data;
