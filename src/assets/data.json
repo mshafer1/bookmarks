@@ -20,6 +20,11 @@
         "description": "Lookup tool to find what package you need to install to get a command that is \"not found\". Includes many linux distros including WSL's flavor of debian."
     },
     {
+        "name": "Ninite",
+        "link": "https://ninite.com/",
+        "description": "\"Install and Update All Your Programs at Once<br/>No toolbars. No clicking next. Just pick your apps and go.\"<br/>seriously, easy installer for most basic apps."
+    },
+    {
         "name": "WiFi standards list",
         "link": "https://www.lifewire.com/wireless-standards-802-11a-802-11b-g-n-and-802-11ac-816553#toc-80211ac-wi-fi-5",
         "description": "Article on WiFi standards names and code names."
