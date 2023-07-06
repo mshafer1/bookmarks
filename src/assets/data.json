@@ -18,5 +18,10 @@
         "name": "command-not-found.com",
         "link": "https://command-not-found.com",
         "description": "Lookup tool to find what package you need to install to get a command that is \"not found\". Includes many linux distros including WSL's flavor of debian."
-    }    
+    },
+    {
+        "name": "Ninite",
+        "link": "https://ninite.com/",
+        "description": "\"Install and Update All Your Programs at Once<br/>No toolbars. No clicking next. Just pick your apps and go.\"<br/>seriously, easy installer for most basic apps."
+    }
 ]
