@@ -7,6 +7,7 @@ import {
   compare,
 } from '../sortable-header.directive'
 import { DOCUMENT, LocationStrategy, Location } from '@angular/common';
+import raw_data from '../../assets/data.json';
 
 @Component({
   selector: 'app-table',
@@ -94,10 +95,7 @@ export class TableComponent {
     console.log('location', this.location)
     console.log('locationStrategy', this.locationStrategy)
 
-    fetch(location.pathname + this.url).then(res => res.json())
-    .then(json => {
-      this.all_data = this.data = this.filtered_data = json;
-      console.log('Data', this.data);
-    });
+    this.all_data = this.data = this.filtered_data = raw_data;
+    console.log("Data", this.data);
   }
 }
