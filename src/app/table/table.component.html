@@ -8,7 +8,7 @@
         </tr>
         <tr *ngFor="let element of data" class="p-1 pt-4 mt-1">
             <th class="th-sm"><p><a href="{{ element.link }}">{{ element.name }} 🔗</a></p></th>
-            <td  class="text-left"><p>{{ element.description }}</p></td>
+            <td  class="text-left"><p [innerHTML]="element.description"></p></td>
         </tr>
     </table>
 </div>
