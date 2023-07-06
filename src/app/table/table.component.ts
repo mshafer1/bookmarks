@@ -89,12 +89,7 @@ export class TableComponent {
   };
 
   ngOnInit() {
-    console.log("Fetching");
-
-    console.log("and", location.pathname)
-    console.log('location', this.location)
-    console.log('locationStrategy', this.locationStrategy)
-
+    console.log("Loading data");
     this.all_data = this.data = this.filtered_data = raw_data;
     console.log("Data", this.data);
   }
