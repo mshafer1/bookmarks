@@ -28,5 +28,15 @@
         "name": "WiFi standards list",
         "link": "https://www.lifewire.com/wireless-standards-802-11a-802-11b-g-n-and-802-11ac-816553#toc-80211ac-wi-fi-5",
         "description": "Article on WiFi standards names and code names."
+    },
+    {
+        "name": "speed test .net",
+        "link": "https://www.speedtest.net/",
+        "description": "Internet speed test by Ookla"
+    },
+    {
+        "name": "iperf3",
+        "link": "https://iperf.fr/iperf-download.php",
+        "description": "Local area speed test<br/>(note: available via package manager on some Linux systems)"
     }
 ]
