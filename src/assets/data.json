@@ -40,7 +40,7 @@
         "description": "Local area speed test<br/>(note: available via package manager on some Linux systems)"
     },
     {
-      "name": "My Git configuration and aliased",
+      "name": "My Git configuration and aliases",
       "link": "https://gist.github.com/mshafer1/c4ad7a6a3b287ec62bc7f5cf568e01ac",
       "description": "All my favorite Git aliases and settings"
     }
