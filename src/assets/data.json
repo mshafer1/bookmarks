@@ -30,6 +30,11 @@
         "description": "Article on WiFi standards names and code names."
     },
     {
+        "name": "Ethernet CAT levels",
+        "link": "https://community.fs.com/blog/quick-view-ethernet-cables-cat5-cat5e-and-cat6.html#:~:text=Cat5%20vs%20Cat5e%20vs%20Cat6%20vs%20Cat7%20vs%20Cat8%3A%20What%20Are%20Their%20Differences%3F",
+        "description": "Article on the different ethernet categories (CAT 5 through CAT 8) and max speeds and distance"
+    },
+    {
         "name": "speed test .net",
         "link": "https://www.speedtest.net/",
         "description": "Internet speed test by Ookla"
@@ -37,11 +42,16 @@
     {
         "name": "iperf3",
         "link": "https://iperf.fr/iperf-download.php",
-        "description": "Local area speed test<br/>(note: available via package manager on some Linux systems)"
+        "description": "Local area speed test<br/>(note: available via package manager <a href=\"https://command-not-found.com/iperf3\">on most Linux systems</a>)"
     },
     {
       "name": "My Git configuration and aliases",
       "link": "https://gist.github.com/mshafer1/c4ad7a6a3b287ec62bc7f5cf568e01ac",
       "description": "All my favorite Git aliases and settings"
+    },
+    {
+      "name": "jq",
+      "link": "https://linuxcommandlibrary.com/man/jq",
+      "description": "Simple command line JSON query, select, filtering, and building"
     }
 ]
