@@ -58,5 +58,10 @@
       "name": "How To Serve Flask Applications with uWSGI and Nginx on Ubuntu 18.04",
       "link": "https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04",
       "description": "DigitalOcean article on setting up Python Flask server"
+    },
+    {
+      "name": "GitHub GPG private email",
+      "link": "https://gist.github.com/nitrocode/bc62b6e86d1bd8c3acf9cb83caab3883",
+      "description": "How to setup GPG signing when using GitHub private email option"
     }
 ]
