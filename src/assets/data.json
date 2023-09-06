@@ -63,5 +63,10 @@
       "name": "GitHub GPG private email",
       "link": "https://gist.github.com/nitrocode/bc62b6e86d1bd8c3acf9cb83caab3883",
       "description": "How to setup GPG signing when using GitHub private email option"
+    },
+    {
+      "name": "XY Problem",
+      "link": "https://xyproblem.info/",
+      "description": "The XY problem is asking about your attempted <i>solution</i> rather than your actual <i>problem</i>."
     }
 ]
