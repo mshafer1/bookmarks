@@ -10,6 +10,11 @@
         "description": "Crontab calculator/checker"
     },
     {
+        "name": "CURL converter",
+        "link": "https://curlconverter.com/",
+        "description": "Convert cURL commands to other languages"
+    },
+    {
         "name": "NW Church of Christ",
         "link": "https://nwchurchofchrist.org/",
         "description": "Northwest Church of Christ website"
