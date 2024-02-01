@@ -103,5 +103,11 @@
         "name": "game-icons.net",
         "link": "https://game-icons.net/",
         "description": "Icons for games/tabletop/vtt (<a href='https://github.com/game-icons/icons'>source repo</a>)"
+    },
+    {
+        "name": "Python logging format options",
+        "link": "https://docs.python.org/3/library/logging.html#logrecord-attributes",
+        "description": "Link of items that can be placed in a Python logging format specification."
     }
+        
 ]
