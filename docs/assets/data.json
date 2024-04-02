@@ -108,6 +108,10 @@
         "name": "Python logging format options",
         "link": "https://docs.python.org/3/library/logging.html#logrecord-attributes",
         "description": "Link of items that can be placed in a Python logging format specification."
-    }
-        
+    },
+    {
+        "name": "Windows 10 Life cycle (EOL)",
+        "link": "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro",
+        "description": "Windows 10 will EOL in October, 2025"
+    } 
 ]
