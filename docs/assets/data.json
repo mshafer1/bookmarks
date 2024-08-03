@@ -113,5 +113,10 @@
         "name": "Windows 10 Life cycle (EOL)",
         "link": "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro",
         "description": "Windows 10 will EOL in October, 2025"
-    } 
+    },
+    {
+        "name": "VSCode :: set terminal to forward ctrl-k",
+        "link": "https://stackoverflow.com/a/61877822/8100990",
+        "description": "Stack Overflow solution to VSCode eating ctrl-k in terminal. <p>Set<br/><pre>\"terminal.integrated.allowChords\": false</pre></p>"
+    }
 ]
