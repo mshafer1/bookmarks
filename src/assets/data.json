@@ -118,5 +118,10 @@
         "name": "VSCode :: set terminal to forward ctrl-k",
         "link": "https://stackoverflow.com/a/61877822/8100990",
         "description": "Stack Overflow solution to VSCode eating ctrl-k in terminal. <p>Set<br/><pre>\"terminal.integrated.allowChords\": false</pre></p>"
+    },
+    {
+        "name": "Windows Help: Format unformattable drive",
+        "link": "https://answers.microsoft.com/en-us/windows/forum/all/unable-to-format-usb-drive-in-windows-10/4010b3fa-0382-45dc-b07f-62f0d40e7a55",
+        "description": "How to format an un-formattable thumb drive (USB Drive) on Windows (Windows format thumb drive)"
     }
 ]
