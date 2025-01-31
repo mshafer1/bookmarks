@@ -123,5 +123,10 @@
         "name": "Windows Help: Format unformattable drive",
         "link": "https://answers.microsoft.com/en-us/windows/forum/all/unable-to-format-usb-drive-in-windows-10/4010b3fa-0382-45dc-b07f-62f0d40e7a55",
         "description": "How to format an un-formattable thumb drive (USB Drive) on Windows (Windows format thumb drive)"
+    },
+    {
+        "name": "Expanding a Linux disk with GParted and getting swap out of the way",
+        "link": "https://blog.mwpreston.net/2012/06/22/expanding-a-linux-disk-with-gparted-and-getting-swap-out-of-the-way/",
+        "description": "How to move swap when it's in a nested partition and still get the base partition expanded"
     }
 ]
