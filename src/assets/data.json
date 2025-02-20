@@ -128,5 +128,10 @@
         "name": "Expanding a Linux disk with GParted and getting swap out of the way",
         "link": "https://blog.mwpreston.net/2012/06/22/expanding-a-linux-disk-with-gparted-and-getting-swap-out-of-the-way/",
         "description": "How to move swap when it's in a nested partition and still get the base partition expanded"
+    },
+    {
+        "name": "Setting up Swap on a Debian/Debian-child system",
+        "link": "https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04",
+        "description": "How to add a swap file to Debian or Ubuntu systems"
     }
 ]
