@@ -133,5 +133,10 @@
         "name": "Setting up Swap on a Debian/Debian-child system",
         "link": "https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04",
         "description": "How to add a swap file to Debian or Ubuntu systems"
+    },
+    {
+        "name": "How long to crack",
+        "link": "https://www.techrepublic.com/article/time-to-crack-your-password-guide/",
+        "description": "Tech Republic reports on how long it takes to brute force a password depending on length and assuming modern computing power"
     }
 ]
