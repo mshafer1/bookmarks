@@ -138,5 +138,10 @@
         "name": "How long to crack",
         "link": "https://www.techrepublic.com/article/time-to-crack-your-password-guide/",
         "description": "Tech Republic reports on how long it takes to brute force a password depending on length and assuming modern computing power"
+    },
+    {
+        "name": "Hard Drive Power Consumption",
+        "link": "https://storedbits.com/hard-drive-power-consumption/",
+        "description": "How much power does a hard drive take, HDD, PSU"
     }
 ]
