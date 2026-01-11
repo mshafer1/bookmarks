@@ -143,5 +143,20 @@
         "name": "Hard Drive Power Consumption",
         "link": "https://storedbits.com/hard-drive-power-consumption/",
         "description": "How much power does a hard drive take, HDD, PSU"
+    },
+    {
+        "name": "JQ how to get all paths to a key name",
+        "link": "https://stackoverflow.com/questions/39800718/how-to-use-jq-to-find-all-paths-to-a-certain-key",
+        "description": "SO :: JQ :: Keys -> how to use jq to find all paths to a certain key"
+    },
+    {
+        "name": "JQ manual",
+        "link": "https://jqlang.org/manual/#advanced-features",
+        "description": "JQ has its own docs."
+    },
+    {
+        "name": "Zendesk JQ cheat sheet",
+        "link": "https://developer.zendesk.com/documentation/integration-services/developer-guide/jq-cheat-sheet/",
+        "description": "Examples of using jq to query and construct data"
     }
 ]
