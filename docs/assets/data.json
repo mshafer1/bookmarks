@@ -1,15 +1,5 @@
 [
     {
-        "name": "Test 1",
-        "link": "#1",
-        "description": "Lorem Ipsum"
-    },
-    {
-        "name": "test lower",
-        "link": "#1",
-        "description": "lorem ipsum"
-    },
-    {
         "name": "strftime.org",
         "link": "https://strftime.org/",
         "description": "Python datetime string formattting cheatsheet"
@@ -20,9 +10,153 @@
         "description": "Crontab calculator/checker"
     },
     {
+        "name": "CURL converter",
+        "link": "https://curlconverter.com/",
+        "description": "Convert cURL commands to other languages"
+    },
+    {
         "name": "NW Church of Christ",
         "link": "https://nwchurchofchrist.org/",
         "description": "Northwest Church of Christ website"
+    },
+    {
+        "name": "command-not-found.com",
+        "link": "https://command-not-found.com",
+        "description": "Lookup tool to find what package you need to install to get a command that is \"not found\". Includes many linux distros including WSL's flavor of debian."
+    },
+    {
+        "name": "Ninite",
+        "link": "https://ninite.com/",
+        "description": "\"Install and Update All Your Programs at Once<br/>No toolbars. No clicking next. Just pick your apps and go.\"<br/>seriously, easy installer for most basic apps."
+    },
+    {
+        "name": "WiFi standards list",
+        "link": "https://www.lifewire.com/wireless-standards-802-11a-802-11b-g-n-and-802-11ac-816553#toc-80211ac-wi-fi-5",
+        "description": "Article on WiFi standards names and code names."
+    },
+    {
+        "name": "Ethernet CAT levels",
+        "link": "https://community.fs.com/blog/quick-view-ethernet-cables-cat5-cat5e-and-cat6.html#:~:text=Cat5%20vs%20Cat5e%20vs%20Cat6%20vs%20Cat7%20vs%20Cat8%3A%20What%20Are%20Their%20Differences%3F",
+        "description": "Article on the different ethernet categories (CAT 5 through CAT 8) and max speeds and distance"
+    },
+    {
+        "name": "speed test .net",
+        "link": "https://www.speedtest.net/",
+        "description": "Internet speed test by Ookla"
+    },
+    {
+        "name": "iperf3",
+        "link": "https://iperf.fr/iperf-download.php",
+        "description": "Local area speed test<br/>(note: available via package manager <a href=\"https://command-not-found.com/iperf3\">on most Linux systems</a>)"
+    },
+    {
+      "name": "My Git configuration and aliases",
+      "link": "https://gist.github.com/mshafer1/c4ad7a6a3b287ec62bc7f5cf568e01ac",
+      "description": "All my favorite Git aliases and settings"
+    },
+    {
+      "name": "jq",
+      "link": "https://linuxcommandlibrary.com/man/jq",
+      "description": "Simple command line JSON query, select, filtering, and building"
+    },
+    {
+      "name": "How To Serve Flask Applications with uWSGI and Nginx on Ubuntu 18.04",
+      "link": "https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04",
+      "description": "DigitalOcean article on setting up Python Flask server"
+    },
+    {
+      "name": "GitHub GPG private email",
+      "link": "https://gist.github.com/nitrocode/bc62b6e86d1bd8c3acf9cb83caab3883",
+      "description": "How to setup GPG signing when using GitHub private email option"
+    },
+    {
+      "name": "XY Problem",
+      "link": "https://xyproblem.info/",
+      "description": "The XY problem is asking about your attempted <i>solution</i> rather than your actual <i>problem</i>."
+    },
+    {
+        "name": "donjon 5e encounter size calculator",
+        "link": "https://donjon.bin.sh/5e/calc/enc_size.html",
+        "description": "Utility for deciding how many \"monsters\" to include for how difficult the encounter should be."
+    },
+    {
+        "name": "FontAwesome",
+        "link": "https://fontawesome.com/icons",
+        "description": "Free/Pro icon library for website (web dev) or desktop use."
+    },
+    {
+        "name": "1001 Free Downloads",
+        "link": "https://www.1001freedownloads.com/",
+        "description": "Icons and images (mostly vectors, some png)."
+    },
+    {
+        "name": "VectorStock",
+        "link": "https://www.vectorstock.com/free-vectors",
+        "description": "SVG (vectors) for iconagraphy and symbols."
+    },
+    {
+        "name": "The Noun Project",
+        "link": "https://thenounproject.com/",
+        "description": "Images and icons -> licensing varies."
+    },
+    {
+        "name": "game-icons.net",
+        "link": "https://game-icons.net/",
+        "description": "Icons for games/tabletop/vtt (<a href='https://github.com/game-icons/icons'>source repo</a>)"
+    },
+    {
+        "name": "Python logging format options",
+        "link": "https://docs.python.org/3/library/logging.html#logrecord-attributes",
+        "description": "Link of items that can be placed in a Python logging format specification."
+    },
+    {
+        "name": "Windows 10 Life cycle (EOL)",
+        "link": "https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro",
+        "description": "Windows 10 will EOL in October, 2025"
+    },
+    {
+        "name": "VSCode :: set terminal to forward ctrl-k",
+        "link": "https://stackoverflow.com/a/61877822/8100990",
+        "description": "Stack Overflow solution to VSCode eating ctrl-k in terminal. <p>Set<br/><pre>\"terminal.integrated.allowChords\": false</pre></p>"
+    },
+    {
+        "name": "Windows Help: Format unformattable drive",
+        "link": "https://answers.microsoft.com/en-us/windows/forum/all/unable-to-format-usb-drive-in-windows-10/4010b3fa-0382-45dc-b07f-62f0d40e7a55",
+        "description": "How to format an un-formattable thumb drive (USB Drive) on Windows (Windows format thumb drive)"
+    },
+    {
+        "name": "Expanding a Linux disk with GParted and getting swap out of the way",
+        "link": "https://blog.mwpreston.net/2012/06/22/expanding-a-linux-disk-with-gparted-and-getting-swap-out-of-the-way/",
+        "description": "How to move swap when it's in a nested partition and still get the base partition expanded"
+    },
+    {
+        "name": "Setting up Swap on a Debian/Debian-child system",
+        "link": "https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04",
+        "description": "How to add a swap file to Debian or Ubuntu systems"
+    },
+    {
+        "name": "How long to crack",
+        "link": "https://www.techrepublic.com/article/time-to-crack-your-password-guide/",
+        "description": "Tech Republic reports on how long it takes to brute force a password depending on length and assuming modern computing power"
+    },
+    {
+        "name": "Hard Drive Power Consumption",
+        "link": "https://storedbits.com/hard-drive-power-consumption/",
+        "description": "How much power does a hard drive take, HDD, PSU"
+    },
+    {
+        "name": "JQ how to get all paths to a key name",
+        "link": "https://stackoverflow.com/questions/39800718/how-to-use-jq-to-find-all-paths-to-a-certain-key",
+        "description": "SO :: JQ :: Keys -> how to use jq to find all paths to a certain key"
+    },
+    {
+        "name": "JQ manual",
+        "link": "https://jqlang.org/manual/#advanced-features",
+        "description": "JQ has its own docs."
+    },
+    {
+        "name": "Zendesk JQ cheat sheet",
+        "link": "https://developer.zendesk.com/documentation/integration-services/developer-guide/jq-cheat-sheet/",
+        "description": "Examples of using jq to query and construct data"
     }
-    
 ]
